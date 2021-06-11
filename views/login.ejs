@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <%- include('partials/headerLink') %>
+        <title>JD Web Solution - Register page</title>
+</head>
+
+<body>
+
+    <%- include('partials/navbar') %>
+
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <div class="registerForm">
+                        <h1>Login to your Account <span></span></h1>
+                        <form action="/login" method="POST">
+                            <div class="form-group">
+                                <label for="email">Email </label>
+                                <input type="email" class="form-control inputStyle" name="email" id="email"
+                                    aria-describedby="emailHelp" placeholder="Enter email">
+                                <small id="emailError" class="form-text"></small>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control inputStyle" name="password" id="password"
+                                    placeholder="Password">
+                                <small id="passwordError" class="form-text"></small>
+                            </div>
+                            <button type="submit" id="loginBtn" class="btn" value="Login">Login</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <%- include('partials/footer') %>
+</body>
+
+</html>

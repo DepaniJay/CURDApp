@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.hidden {
+  display: none;
+}
+
+.headerImg {
+  width: 100%;
+  background: url("../img/authbg1.jpg") no-repeat center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: black;
+  z-index: 99;
+}
+
+.headerText {
+  color: white;
+}
+
+.headerImg h1 {
+  margin-top: 170px;
+}
+
+.headerImg button {
+  margin-bottom: 170px;
+}
+
+.header {
+  background-color: #f4f4f4;
+}
+
+.headerImg button {
+  background-color: #fab702;
+}
+
+.whoWeAre {
+  margin-top: 100px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.leftDiv {
+  padding: 20px 40px;
+}
+
+.leftDiv h1,
+.registerForm h1,
+.profileHeading h1 {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.leftDiv span,
+.registerForm span,
+.profileHeading span {
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  width: 130px;
+  border-bottom: 2px solid #fab702;
+}
+
+.rightDiv {
+  padding: 20px 40px;
+}
+
+.rightDiv figure img {
+  width: 550px;
+  height: 350px;
+}
+
+.bottomRow {
+  margin-bottom: 70px;
+}
+
+.bottomRow .box {
+  text-align: center;
+  margin: 5px auto;
+  padding: 5px auto;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.bottomRow .box:hover {
+  box-shadow: 7px 7px 50px #aaaaaa;
+  background-color: #fff;
+}
+
+.bottomRow .box img {
+  padding: 15px;
+}
+
+.bottomRow .box h2 {
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.aboutHeading {
+  background-color: #f4f4f4;
+  padding: 10px 40px;
+  text-transform: uppercase;
+}
+
+.registerForm {
+  margin-top: 50px;
+}
+
+.form-group {
+  margin: 10px 0;
+}
+
+#registerBtn,
+#loginBtn,
+#profileEditBtn,
+#editProfileBtn {
+  margin: 20px 0;
+  background-color: #fab702;
+  color: black;
+}
+
+.profileHeading {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#userImage {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+}
+
+footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  line-height: 60px;
+}
+
+footer p {
+  margin: 0;
+  color: #fff;
+}

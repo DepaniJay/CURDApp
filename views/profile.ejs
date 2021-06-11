@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <%- include('partials/headerLink') %>
+        <title>JD Web Solution - Register page</title>
+</head>
+
+<body>
+
+    <%- include('partials/navbar') %>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8 col-12 mx-auto">
+                    <div class="profileDiv">
+                        <div class="profileHeading">
+                            <h1>Your Profile <span></span></h1>
+                            <a href="/editprofile" id="editProfileBtn"><button class="btn"><i
+                                        class="fa fa-pencil-square-o"></i> Edit
+                                    profile</button></a>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-12">
+                                <img src='profileImages/<%=imagename%>' id="userImage" class="img-circle"
+                                    alt="User image">
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <div class="userDetails">
+                                    <h2 class="text-capitalize">
+                                        <%=name%>
+                                    </h2>
+                                    <br>
+                                    <p> <strong> Email: </strong>
+                                        <%=useremail%>
+                                    </p>
+                                    <p> <strong> Phone no: </strong>
+                                        <%=userphoneno%>
+                                    </p>
+                                    <p class="text-capitalize"> <strong> Gender: </strong>
+                                        <%=gender%>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <%- include('partials/footer') %>
+</body>
+
+</html>
